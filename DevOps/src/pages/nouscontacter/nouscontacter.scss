@@ -1,3 +1,40 @@
 page-nouscontacter {
-
+    .hide {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      
+      #contact-form {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+        input[type='text'],
+        input[type='email'] {
+          height: 40px;
+          border: 1px solid black;
+        }
+        textarea {
+          height: 200px;
+          max-width: 100%;
+          border: 1px solid black;
+        }
+        button {
+          color: white;
+          border-style: none;
+        }
+        input,
+        textarea,
+        button {
+          width: 100%;
+          border-radius: 5px;
+          padding: 12px;
+          box-sizing: border-box;
+          &:focus {
+            outline: none;
+            border: 2px solid #0cf10c;
+            padding: 11px;
+          }
+        }
+      }
 }
