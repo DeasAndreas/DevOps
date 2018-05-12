@@ -13,7 +13,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ProfilPage } from "../pages/profil/profil";
-
+import { NouscontacterPage } from "../pages/nouscontacter/nouscontacter"
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -23,7 +23,8 @@ export function createTranslateLoader(http: HttpClient) {
     MyApp,
     HomePage,
     ListPage,
-    ProfilPage
+    ProfilPage,
+    NouscontacterPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +43,8 @@ export function createTranslateLoader(http: HttpClient) {
     MyApp,
     HomePage,
     ListPage,
-    ProfilPage
+    ProfilPage,
+    NouscontacterPage
   ],
   providers: [
     StatusBar,
