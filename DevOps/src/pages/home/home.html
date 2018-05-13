@@ -1,50 +1,27 @@
 <ion-header>
-  <ion-navbar color="dark">
+  <ion-navbar>
     <button ion-button menuToggle>
-      <ion-icon name="menu" color="secondary"></ion-icon>
+      <ion-icon name="menu" color="dark"></ion-icon>
     </button>
-    <ion-title><!--{{'Home.title.big' | translate}}-->
-      
-      <div class="wrapper">
-        <div class="outer">
-          <div class="inner">
-            <div class="line"></div>
-            <div class="linetwo"></div>
-            <div class="linethree"></div>
-          </div>
-        </div>
-      </div>
-  
-    </ion-title>
+    <ion-title><img src="../../assets/imgs/logo1.png" width="50%" height="50%"></ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-<!-------------------------------search Bar------------------------------>
-  <ion-searchbar></ion-searchbar>
-<!---------------------------Logo + Bienvenue---------------------------->
+  <!---------------------------Logo + Bienvenue---------------------------->
 <ion-grid>
   <ion-row class="banner">
-    <ion-col></ion-col>
-    <ion-col>
-    <div class="outer">
-      <div class="inner">
-        <div class="line"></div>
-        <div class="linetwo"></div>
-        <div class="linethree"></div>
-      </div>
-    </div>
-  </ion-col>
-  <ion-col></ion-col>
+      <ion-col>
+      <h3>Des services pour vos projet de developpement openSource & payant</h3>
+      <ion-searchbar placeholder="Rechercher"></ion-searchbar>
+      <p class="exSearch">Suggestions: Template, un developpeur, un service, un plugin....</p>
+    </ion-col>
   </ion-row>
 </ion-grid>
-<!--------------------------File d'actualité------------------------------>
-    
+
+  <!--------------------------File d'actualité------------------------------>
+    <div hideWhen="core">
     <h1>Dernière mise en ligne</h1>
-
-
-
-
     <ion-card>
         <img src="http://www.phpsources.org/images_scripts/emrah_karademir.jpg"/>
         <h1>Formulaire de contact</h1>
@@ -68,4 +45,5 @@
         <h1>Skill bar Js</h1>
         <button ion-button full color="secondary">Voir</button>
     </ion-card>
+    </div>
 </ion-content>
