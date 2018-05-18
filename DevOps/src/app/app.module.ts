@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { CardUiComponent } from '../components/card-ui/card-ui';
+import { MobileCardUiComponent } from '../components/mobile-card-ui/mobile-card-ui';
 import { PanierHistComponent } from '../components/panier-hist/panier-hist';
 import { PanierComponent } from '../components/panier/panier';
 
@@ -33,7 +34,8 @@ export function createTranslateLoader(http: HttpClient) {
     NouscontacterPage,
     CardUiComponent,
     PanierHistComponent,
-    PanierComponent
+    PanierComponent,
+    MobileCardUiComponent
 
   ],
   imports: [
@@ -57,7 +59,8 @@ export function createTranslateLoader(http: HttpClient) {
     NouscontacterPage,
     CardUiComponent,
     PanierHistComponent,
-    PanierComponent
+    PanierComponent,
+    MobileCardUiComponent
   ],
   providers: [
     StatusBar,

@@ -1,3 +1,118 @@
 page-profil {
+    .bgbg{
+    background-image: url('https://vfwebsiteassets.s3.amazonaws.com/0d807bc2-08cd-4701-95ff-be605ec67b10.jpg');
+}
+    @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
+    .box {
+      width: 300px;
+      height: 450px;
+      margin: auto;
+      background-color: transparent;
+      border-style: solid;
+      border-width: 0.0px;
+      /* add px if you want border */
+      
+      border-color: #eee;
+      margin-bottom: 800px;
+      /* delete */
+      
+      margin-top: 25px;
+      /* delete */
+      
+      background: url('') no-repeat center center;
+      background-size: 300px 210px;
+      background-position: left top;
+    }
+    
+    .text {
+      font-family: raleway;
+      font-size: 40px;
+      position: absolute center;
+      display: inline-block;
+      text-align: center;
+      padding-left: 7.4%;
+      color: black;
+      margin-top: 43px;
+    }
+    
+    .text1 {
+      font-family: raleway;
+      font-size: 29px;
+      text-align: center;
+      margin-top: -20px;
+      color: black;
+    }
+    
+    .btn-outline {
+      color: inherit;
+      transition: all 1.4s;
+      background-color: transparent;
+    }
+    
+    .bio {
+      font-family: raleway;
+      font-size: 20px;
+      margin-right: 5%;
+    }
+    
+    .image {
+      text-align: center;
+      width: 250px;
+      /* Container's dimensions */
+      
+      height: 250px;
+      -webkit-border-radius: 75%;
+      -moz-border-radius: 75%;
+      box-shadow: 0 0 0 1px #eee;
+      background: url("https://scontent-cdg2-1.cdninstagram.com/vp/964d9b707b5914e998b98015c8075f17/5B85E148/t51.2885-15/e35/12965630_992921980761147_1384957424_n.jpg") center center no-repeat;
+      background-size: cover;
+      margin: 8%;
+      margin-top: 20px;
+      margin-bottom: -30px;
+      align-content: center;
+    }
+    
+    .trick {
+      display: inline-block;
+      vertical-align: middle;
+      height: 150px;
+    }
+    
+    .image:hover {
+      box-shadow: 0px 0px 38px .9px #ccc;
+    }
+    
+    .image:hover {
+      -webkit-transform: scale(1.10);
+      transform: scale(1.10);
+      -webkit-transition: 1.6s ease-in-out;
+      transition: 1.6s ease-in-out;
+    }
+    .image {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+      -webkit-transition: 1.6s ease-out;
+      transition: 1.6s ease-out;
+    }
+    
+    
+    .trick:hover img {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    
+    #overlay {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      padding: 0 0 0 0;
+      opacity: 1.0;
+      -webkit-transition: opacity 2.25s ease;
+      -moz-transition: opacity 10.25s ease;
+    }
+    
+    #box:hover #overlay {
+      opacity: 1;
+    }
+    
 }
