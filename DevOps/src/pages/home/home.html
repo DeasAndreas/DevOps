@@ -4,6 +4,7 @@
       <ion-icon name="menu" color="dark"></ion-icon>
     </button>
     <ion-title>{{'Home.title.big' | translate}}</ion-title>
+    <panier></panier>
   </ion-navbar>
 </ion-header>
 
@@ -91,17 +92,7 @@
     </h3>
   </div>
 
-
-  <!--<ion-grid>
-    <ion-row class="banner">
-        <ion-col>
-        <h3>Des services pour vos projet de developpement openSource & payant</h3>
-        <ion-searchbar placeholder="Rechercher"></ion-searchbar>
-        <p class="exSearch">Suggestions: Template, un developpeur, un service, un plugin....</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>-->
-
+  <card-ui showWhen="core"></card-ui>
   <!--------------------------Dernière mise en ligne------------------------------>
   <div hideWhen="core">
   <h1>Dernière mise en ligne</h1>

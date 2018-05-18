@@ -6,8 +6,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
+
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { CardUiComponent } from '../components/card-ui/card-ui';
+import { PanierHistComponent } from '../components/panier-hist/panier-hist';
+import { PanierComponent } from '../components/panier/panier';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -24,7 +30,11 @@ export function createTranslateLoader(http: HttpClient) {
     HomePage,
     ListPage,
     ProfilPage,
-    NouscontacterPage
+    NouscontacterPage,
+    CardUiComponent,
+    PanierHistComponent,
+    PanierComponent
+
   ],
   imports: [
     BrowserModule,
@@ -44,7 +54,10 @@ export function createTranslateLoader(http: HttpClient) {
     HomePage,
     ListPage,
     ProfilPage,
-    NouscontacterPage
+    NouscontacterPage,
+    CardUiComponent,
+    PanierHistComponent,
+    PanierComponent
   ],
   providers: [
     StatusBar,
