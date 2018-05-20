@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ToastController } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
+import { AngularFireAuth } from'angularfire2/auth';
+
 
 @Component({
   selector: 'page-home',
@@ -9,10 +11,29 @@ import { TranslateService } from '@ngx-translate/core';
 export class HomePage {
 
   constructor(
+    private toast: ToastController,
+    private afAuth: AngularFireAuth,
     public navCtrl: NavController,
     public translate: TranslateService
   ) {
     this.translate.setDefaultLang('fr');
   }
+
+  ionViewWillLoad(){
+    this.afAuth.authState.subscribe(data => {
+      if (data.email && data.uid){
+      this.toast.create({
+        message: 'Vous etes bien connecter !',
+        duration: 3000
+      }).present();
+    }
+    else{
+      this.toast.create({
+        message: 'Mot de passe ou email invalid',
+        duration: 3000
+      }).present();
+    }
+    });
+}
 
 }

@@ -26,7 +26,6 @@ import { NouscontacterPage } from "../pages/nouscontacter/nouscontacter"
 
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule } from "angularfire2/auth";
-import { AngularFireAuth } from "angularfire2/auth";
 import { FIREBASE_CONFIG } from './app.firebase.config';
 
 
