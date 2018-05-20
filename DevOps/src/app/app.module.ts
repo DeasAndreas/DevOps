@@ -5,6 +5,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
 
 
 
@@ -21,6 +23,13 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ProfilPage } from "../pages/profil/profil";
 import { NouscontacterPage } from "../pages/nouscontacter/nouscontacter"
+
+import { AngularFireModule } from "angularfire2";
+import { AngularFireAuthModule } from "angularfire2/auth";
+import { AngularFireAuth } from "angularfire2/auth";
+import { FIREBASE_CONFIG } from './app.firebase.config';
+
+
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -35,12 +44,16 @@ export function createTranslateLoader(http: HttpClient) {
     CardUiComponent,
     PanierHistComponent,
     PanierComponent,
-    MobileCardUiComponent
+    MobileCardUiComponent,
+    RegisterPage,
+    LoginPage
 
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    AngularFireAuthModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -60,7 +73,9 @@ export function createTranslateLoader(http: HttpClient) {
     CardUiComponent,
     PanierHistComponent,
     PanierComponent,
-    MobileCardUiComponent
+    MobileCardUiComponent,
+    RegisterPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
