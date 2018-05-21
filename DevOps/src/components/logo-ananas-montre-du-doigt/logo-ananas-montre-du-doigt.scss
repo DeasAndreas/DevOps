@@ -1,0 +1,26 @@
+logo-ananas-montre-du-doigt {
+    div{position:absolute}
+    .pineapple{
+        font-size:90vmin;
+        height:1em;
+        margin:5vmin auto;
+        width:.9em;
+        position:relative
+    }
+    .leaf{
+        background-color:#006400;
+        border-radius:90% 0;
+        height:20%;
+        top:10%;
+        width:20%
+    }
+    .body,.body:after{
+        border-radius:40%
+    }
+    .middle{
+        background-color:green;
+        left:40%;
+        top:5%;
+        transform:rotate(-40deg);
+        animation:leafMiddle .25s ease-in-out alternate infinite}.leaf.left{left:48%;top:7%;transform:rotate(-70deg);animation:leafLeft .25s ease-in-out alternate infinite;transform-origin:bottom left}.leaf.right{right:31%;top:7%;transform:rotate(-15deg);animation:leafRight .25s ease-in-out alternate infinite;transform-origin:bottom left}@keyframes leafLeft{from{transform:rotate(-75deg)}to{transform:rotate(-85deg)}}@keyframes leafMiddle{from{transform:translateY(-10%) rotate(-40deg)}to{transform:translateY(10%) rotate(-40deg)}}@keyframes leafRight{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}.body{width:50%;height:50%;background-color:#ffa700;left:24%;top:25%}.body:after{background:repeating-linear-gradient(-45deg,transparent,transparent 15%,#ff8c00 15%,#ff8c00 20%),repeating-linear-gradient(45deg,transparent,transparent 15%,#ff8c00 15%,#ff8c00 20%);content:'';height:100%;position:absolute;width:100%}.eye,.mouth{background-color:#000;z-index:2}.eye{width:15%;height:15%;border-radius:100%;top:30%;animation:blink 1.04s infinite}@keyframes blink{100%,50%{transform:rotateX(180deg)}}.eye.left{left:25%}.eye.right{right:25%}.mouth{width:18%;height:12%;border-radius:20% 20% 80% 80%;left:41%;top:50%}.arm,.leg{width:20%;height:50%;background-color:#ffa700;border-radius:100vw}.arm.right{transform-origin:top right;animation:wave 2.5s forwards infinite linear}.arm.left{left:-5%;top:40%}.leg.left{left:23%;top:70%}.leg.right{right:23%;top:70%}@keyframes wave{0%,100%,20%,40%,60%,80%{transform:rotate(240deg);right:25%;top:40%}10%,30%,50%,70%,90%{transform:rotate(250deg);right:25%;top:40%}}.shadow{width:50%;height:10%;background-color:gray;border-radius:100%;left:23%;top:80%}
+}

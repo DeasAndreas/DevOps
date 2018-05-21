@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { AbonnementPage } from '../pages/abonnement/abonnement'
 import { TranslateService } from '@ngx-translate/core';
 import { ProfilPage } from "../pages/profil/profil";
 import { NouscontacterPage } from "../pages/nouscontacter/nouscontacter"
@@ -15,7 +16,7 @@ import { NouscontacterPage } from "../pages/nouscontacter/nouscontacter"
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -33,6 +34,7 @@ export class MyApp {
       { title: 'Profil', component: ProfilPage },
       { title: 'Language', component: ListPage },
       { title: 'Nous contacter', component: NouscontacterPage },
+      { title: 'Abonnement', component: AbonnementPage },
 
 
     ];

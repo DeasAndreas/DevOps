@@ -17,10 +17,16 @@ import { CardUiComponent } from '../components/card-ui/card-ui';
 import { MobileCardUiComponent } from '../components/mobile-card-ui/mobile-card-ui';
 import { PanierHistComponent } from '../components/panier-hist/panier-hist';
 import { PanierComponent } from '../components/panier/panier';
+import { LogoAnanasComponent } from '../components/logo-ananas/logo-ananas'
+import { LogoAnanasMontreDuDoigtComponent } from '../components/logo-ananas-montre-du-doigt/logo-ananas-montre-du-doigt'
+import { PricingComponent } from '../components/pricing/pricing'
+
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+import { AbonnementPage } from '../pages/abonnement/abonnement'
 import { ProfilPage } from "../pages/profil/profil";
 import { NouscontacterPage } from "../pages/nouscontacter/nouscontacter"
 
@@ -45,7 +51,11 @@ export function createTranslateLoader(http: HttpClient) {
     PanierComponent,
     MobileCardUiComponent,
     RegisterPage,
-    LoginPage
+    LoginPage,
+    LogoAnanasComponent,
+    LogoAnanasMontreDuDoigtComponent,
+    PricingComponent,
+    AbonnementPage
 
   ],
   imports: [
@@ -74,7 +84,11 @@ export function createTranslateLoader(http: HttpClient) {
     PanierComponent,
     MobileCardUiComponent,
     RegisterPage,
-    LoginPage
+    LoginPage,
+    LogoAnanasComponent,
+    LogoAnanasMontreDuDoigtComponent,
+    PricingComponent,
+    AbonnementPage
   ],
   providers: [
     StatusBar,
