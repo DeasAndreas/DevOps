@@ -1,24 +1,34 @@
 
 <ion-header>
 
-  <ion-navbar color="primary">
+  <ion-navbar>
     <ion-title>Login</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="loginBody" padding>
+<ion-grid>
+  <ion-row>
+    <ion-col></ion-col>
+    <ion-col>
+ <img class="imgLogin" src="../../assets/imgs/logo1.png">
+  </ion-col>
+  <ion-col ></ion-col>
+ </ion-row>
+</ion-grid>
+
   <ion-item>
     <ion-label floating>Adress Email</ion-label>
-    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+    <ion-input class="inpute" type="text" [(ngModel)]="user.email"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>Mot de passe</ion-label>
-    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    <ion-input class="inpute" type="password" [(ngModel)]="user.password"></ion-input>
   </ion-item>
 
-  <button ion-button (click)="login(user)">Login</button>
-  <button ion-button (click)="registerPage()">Register</button>
+  <button ion-button block (click)="login(user)" color="secondary">Login</button>
+  <button ion-button block (click)="registerPage()">Register</button>
 </ion-content>
