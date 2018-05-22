@@ -8,8 +8,6 @@ import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 
-
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -20,7 +18,7 @@ import { PanierComponent } from '../components/panier/panier';
 import { LogoAnanasComponent } from '../components/logo-ananas/logo-ananas'
 import { LogoAnanasMontreDuDoigtComponent } from '../components/logo-ananas-montre-du-doigt/logo-ananas-montre-du-doigt'
 import { PricingComponent } from '../components/pricing/pricing'
-
+import { SkillComponent } from "../components/skill/skill";
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -55,7 +53,8 @@ export function createTranslateLoader(http: HttpClient) {
     LogoAnanasComponent,
     LogoAnanasMontreDuDoigtComponent,
     PricingComponent,
-    AbonnementPage
+    AbonnementPage,
+    SkillComponent
 
   ],
   imports: [
@@ -88,7 +87,9 @@ export function createTranslateLoader(http: HttpClient) {
     LogoAnanasComponent,
     LogoAnanasMontreDuDoigtComponent,
     PricingComponent,
-    AbonnementPage
+    AbonnementPage,
+    SkillComponent
+
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,62 @@
+.skillBody{
+
+
+  .page-wrap {
+    padding: 2em;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  //The skill bars
+
+  $skill1: #d7edfa;
+  $skill2: #c8e7f8;
+  $skill3: #b9e0f7;
+  $skill4: #a9d9f5;
+  $skill5: #9ad3f3;
+
+  .skill-bar-container {
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    margin-bottom: 0.5em;
+    .skill-bar {
+      display: block;
+      border-radius: 4px;
+      height: 25px;
+      //background-color: $skillColor; //#d7edfa
+      &.level1 { width: 20%; background-color: $skill1}
+      &.level2 { width: 40%; background-color: $skill2}
+      &.level3 { width: 60%; background-color: $skill3}
+      &.level4 { width: 80%; background-color: $skill4}
+      &.level5 { width: 100%; background-color: $skill5 }
+    }
+    .skill-name {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      color: #333; //#333
+      //font-weight: 600;
+    }
+    .skill-percent {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      color: #999; //#333
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}

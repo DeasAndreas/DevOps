@@ -6,6 +6,7 @@ import { MobileCardUiComponent } from './mobile-card-ui/mobile-card-ui';
 import { LogoAnanasComponent } from './logo-ananas/logo-ananas';
 import { LogoAnanasMontreDuDoigtComponent } from './logo-ananas-montre-du-doigt/logo-ananas-montre-du-doigt';
 import { PricingComponent } from './pricing/pricing';
+import { SkillComponent } from './skill/skill';
 @NgModule({
 	declarations: [CardUiComponent,
     PanierComponent,
@@ -13,7 +14,8 @@ import { PricingComponent } from './pricing/pricing';
     MobileCardUiComponent,
     LogoAnanasComponent,
     LogoAnanasMontreDuDoigtComponent,
-    PricingComponent],
+    PricingComponent,
+    SkillComponent],
 	imports: [],
 	exports: [CardUiComponent,
     PanierComponent,
@@ -21,6 +23,7 @@ import { PricingComponent } from './pricing/pricing';
     MobileCardUiComponent,
     LogoAnanasComponent,
     LogoAnanasMontreDuDoigtComponent,
-    PricingComponent]
+    PricingComponent,
+    SkillComponent]
 })
 export class ComponentsModule {}
