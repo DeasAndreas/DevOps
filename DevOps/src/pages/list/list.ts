@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'page-list',
@@ -14,11 +13,9 @@ export class ListPage {
   constructor(
     public navCtrl: NavController,
      public navParams: NavParams, 
-     public translate: TranslateService
     ) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
-    this.translate.setDefaultLang('fr');
 
     // Let's populate this page with some filler content for funzies
     this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',

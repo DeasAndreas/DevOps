@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
-import { TranslateService } from '@ngx-translate/core';
 import { AngularFireAuth } from'angularfire2/auth';
 
 
@@ -14,9 +13,7 @@ export class HomePage {
     private toast: ToastController,
     private afAuth: AngularFireAuth,
     public navCtrl: NavController,
-    public translate: TranslateService
   ) {
-    this.translate.setDefaultLang('fr');
   }
 
   ionViewWillLoad(){

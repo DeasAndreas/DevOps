@@ -19,10 +19,7 @@ import { LogoAnanasComponent } from '../components/logo-ananas/logo-ananas'
 import { LogoAnanasMontreDuDoigtComponent } from '../components/logo-ananas-montre-du-doigt/logo-ananas-montre-du-doigt'
 import { PricingComponent } from '../components/pricing/pricing'
 import { SkillComponent } from "../components/skill/skill";
-
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PortfolioComponent } from "../components/portfolio/portfolio"
 
 import { AbonnementPage } from '../pages/abonnement/abonnement'
 import { ProfilPage } from "../pages/profil/profil";
@@ -33,9 +30,7 @@ import { AngularFireAuthModule } from "angularfire2/auth";
 import { FIREBASE_CONFIG } from './app.firebase.config';
 
 
-export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}
+
 
 @NgModule({
   declarations: [
@@ -54,7 +49,8 @@ export function createTranslateLoader(http: HttpClient) {
     LogoAnanasMontreDuDoigtComponent,
     PricingComponent,
     AbonnementPage,
-    SkillComponent
+    SkillComponent,
+    PortfolioComponent
 
   ],
   imports: [
@@ -62,14 +58,6 @@ export function createTranslateLoader(http: HttpClient) {
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
-    HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: createTranslateLoader,
-        deps: [HttpClient]
-      }
-    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -88,7 +76,8 @@ export function createTranslateLoader(http: HttpClient) {
     LogoAnanasMontreDuDoigtComponent,
     PricingComponent,
     AbonnementPage,
-    SkillComponent
+    SkillComponent,
+    PortfolioComponent
 
   ],
   providers: [

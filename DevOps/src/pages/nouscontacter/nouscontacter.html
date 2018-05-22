@@ -1,9 +1,9 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar color="primary">
       <button ion-button menuToggle>
         <ion-icon name="menu" color="dark"></ion-icon>
       </button>
-      <ion-title>{{'Contact.us.title' | translate}}</ion-title>
+      <ion-title>Nous contactez}</ion-title>
       <panier></panier>
     </ion-navbar>
   </ion-header>
@@ -15,7 +15,7 @@
 <div id="contact-form">
     <form action="" method="post">
       <p>
-        <label class="hide" for="name">{{'Contact.us.name' | translate}}</label>
+        <label class="hide" for="name">Nom</label>
         <input type="text" name="name" placeholder="Nom" value="" />
       </p>
 
@@ -28,9 +28,8 @@
         <label class="hide" for="message">Message:</label>
         <textarea name="message" placeholder="Message" cols="200" rows="10"></textarea>
       </p>
-      <button ion-button color="primary">{{'Contact.us.submit' | translate}}</button>
+      <button ion-button color="primary">Envoyer</button>
     </form>
   </div>
-
 
 </ion-content>

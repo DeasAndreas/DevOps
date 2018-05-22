@@ -7,6 +7,7 @@ import { LogoAnanasComponent } from './logo-ananas/logo-ananas';
 import { LogoAnanasMontreDuDoigtComponent } from './logo-ananas-montre-du-doigt/logo-ananas-montre-du-doigt';
 import { PricingComponent } from './pricing/pricing';
 import { SkillComponent } from './skill/skill';
+import { PortfolioComponent } from './portfolio/portfolio';
 @NgModule({
 	declarations: [CardUiComponent,
     PanierComponent,
@@ -15,7 +16,8 @@ import { SkillComponent } from './skill/skill';
     LogoAnanasComponent,
     LogoAnanasMontreDuDoigtComponent,
     PricingComponent,
-    SkillComponent],
+    SkillComponent,
+    PortfolioComponent],
 	imports: [],
 	exports: [CardUiComponent,
     PanierComponent,
@@ -24,6 +26,7 @@ import { SkillComponent } from './skill/skill';
     LogoAnanasComponent,
     LogoAnanasMontreDuDoigtComponent,
     PricingComponent,
-    SkillComponent]
+    SkillComponent,
+    PortfolioComponent]
 })
 export class ComponentsModule {}

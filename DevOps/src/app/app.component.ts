@@ -7,7 +7,6 @@ import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { AbonnementPage } from '../pages/abonnement/abonnement'
-import { TranslateService } from '@ngx-translate/core';
 import { ProfilPage } from "../pages/profil/profil";
 import { NouscontacterPage } from "../pages/nouscontacter/nouscontacter"
 @Component({
@@ -24,7 +23,6 @@ export class MyApp {
     public platform: Platform,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
-    public translate: TranslateService
     ) {
     this.initializeApp();
 
